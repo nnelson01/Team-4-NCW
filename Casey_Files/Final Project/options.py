@@ -20,7 +20,6 @@ def european_binomial_pricer(spot: float, strike: float, expiry: float, rate: fl
     pu = (np.exp((rate - div) * h) - d) / (u - d)
     pd = 1.0 - pu   
     disc = np.exp(-rate * expiry)
-          
     St = 0.0
     Ct = 0.0
     
